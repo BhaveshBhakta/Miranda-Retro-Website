@@ -25,7 +25,7 @@ html,body{
 }
 
 #page1{
-    height: 130vh;
+    min-height: 100vh;
     width: 100vw;
     background-color: #c4bcb3;
     position: relative;
@@ -33,7 +33,7 @@ html,body{
 }
 
 #nav{
-    height: 60px;
+    height: 80px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -43,7 +43,7 @@ html,body{
 }
 
 #nav img{
-    height: 20px;
+    height: 24px;
     width: 30%;
 }
 
@@ -192,27 +192,36 @@ html,body{
 
 }
 
+#bottom-text{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 #page1 h1{
-    width: 95vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30vw;
+    width: 96vw;
     color: #c4bcb3;
-    font-size: 450px;
+    font-size: 36vw;
     font-weight: 100;
-    text-align: center;
     letter-spacing: -23px;
-    line-height: 400px;
     background-color: #1c1b19;
-    font-family: canopee;
-    margin:0 2%;
+    font-family: canopee; 
 }
 
 #page2{
-    height: 150vh;
+    min-height: 100vh;
     width: 100%;
     background-color: #c4bcb3;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 60px 30px;
+    padding-top: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 #left-div{
@@ -225,7 +234,7 @@ html,body{
 #left-div h2{
     color: #1e1d1d;
     line-height: 90px;
-    font-size: 85px;
+    font-size: 90px;
     font-family: canopee;
     text-align: center;
     font-weight: 100;
@@ -256,7 +265,7 @@ html,body{
 #right-div{
     height: 100%;
     width: 65%;
-    padding: 0 10px;
+    padding-top: 10px;
 }
 
 #right-div img{
@@ -269,15 +278,16 @@ html,body{
 #right-div h1{
     font-weight: 110;
     margin-top: 30px;
-    line-height: 80px;
+    line-height: 85px;
     color: #1e1d1d;
     font-family: canopee;
-    font-size: 88px;
+    font-size: 110px;
 }
 
 #page3{
-    height: 40%;
-    width: 100%;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
     background-color: #c4bcb3;
     display: flex;
     justify-content: center;
@@ -285,21 +295,136 @@ html,body{
 }
 
 #page3 h1{
-    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
     letter-spacing: -16px;
     font-weight: 100;
-    font-size: 350px;
+    font-size: 28vw;
     font-family: canopee;
     background-color: #1c1b19;
     line-height: 300px;
     color: #c4bcb3;
     padding: 0 20px;
+    margin-right: 2vw;
 }
 
+#page3 img{
+    height: 55vh;
+    gap: 0.5vw;
+    margin-right: 1vw;
+}
+ 
+/*
 
-
-#page4{
+#left-container{
     height: 100vh;
-    width: 100%;
-    background-color: #c4bcb3;
+    width: 65vw;
 }
+
+#top-div{
+    height: 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+#element1{
+    width: 45%;
+    height: 100%;
+    padding-right: 5vw;
+    border-right: 1px solid rgb(120, 115, 115);
+}
+
+#element2{
+    width: 42%;
+    height: 100%;
+    text-align: center;
+    border-right: 1px solid rgb(120, 115, 115);
+}
+
+#img-div img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all ease 0.5s;
+}
+
+#element1 #image-div{
+    height: 55%;
+    width: 100%;
+    overflow: hidden;
+    border: 1.2px solid rgb(120, 115, 115);
+}
+
+
+#img-div:hover img{
+    scale: 1.1;
+}
+
+#element1 h4{
+    color: #1e1d1d;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 8px;
+    font-family: canopee;
+}
+
+
+#element1 p{
+    font-size: 15px;
+    font-family: editorial;
+}
+
+#element2 h2 {
+    letter-spacing: -3px;
+    font-family: canopee;
+    color: #1e1d1d;
+    font-size: 55px;
+    font-weight: 100;
+}
+
+#element2 h3 {
+    font-family: editorial;;
+    font-size: 30px;
+    color: #2f2f2f;
+    font-weight: 100;
+    margin: 8px 0;
+}
+
+#element2 h6 {
+    font-family: editorial;
+    font-size: 18px;
+    color: #1e1d1d;
+    font-weight: 100;
+    margin: 20px 0;
+}
+
+#element2 h6 span{
+    color: #323030;
+}
+
+#bottom-div{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+#bottom-div img{
+ 
+    width: 90%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#page5{
+    min-height: 100vh;
+    width: 100vw;
+    background-color: #c4bcb3;
+    position: relative;
+    overflow: hidden;
+} */
