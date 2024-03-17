@@ -20,6 +20,7 @@ html,body{
 }
 
 #main{
+    height: 100%;
     background-color: #2f2f2f;
     overflow-x: hidden;
 }
@@ -203,7 +204,7 @@ html,body{
     align-items: center;
     justify-content: center;
     height: 30vw;
-    width: 96vw;
+    width: 95vw;
     color: #c4bcb3;
     font-size: 36vw;
     font-weight: 100;
@@ -213,8 +214,8 @@ html,body{
 }
 
 #page2{
-    min-height: 100vh;
-    width: 100%;
+    min-height: 140vh;
+    width: 100vw;
     background-color: #c4bcb3;
     display: flex;
     align-items: center;
@@ -286,7 +287,7 @@ html,body{
 
 #page3{
     position: relative;
-    height: 180vh;
+    height: 60vh;
     width: 100vw;
     background-color: #c4bcb3;
     display: flex;
@@ -316,7 +317,15 @@ html,body{
     margin-right: 1vw;
 }
  
-/*
+
+#page4{
+    height: 130vh;
+    width: 100vw;
+    background-color: #c4bcb3;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+}
 
 #left-container{
     height: 100vh;
@@ -332,10 +341,13 @@ html,body{
 }
 
 #element1{
+    margin-top: 1vw;
+    position: relative;
     width: 45%;
+    padding-right: 3vw;
     height: 100%;
-    padding-right: 5vw;
-    border-right: 1px solid rgb(120, 115, 115);
+    margin-right: 5vw;
+    
 }
 
 #element2{
@@ -345,13 +357,6 @@ html,body{
     border-right: 1px solid rgb(120, 115, 115);
 }
 
-#img-div img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    transition: all ease 0.5s;
-}
-
 #element1 #image-div{
     height: 55%;
     width: 100%;
@@ -359,6 +364,12 @@ html,body{
     border: 1.2px solid rgb(120, 115, 115);
 }
 
+#img-div img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all ease 0.5s;
+}
 
 #img-div:hover img{
     scale: 1.1;
@@ -366,40 +377,43 @@ html,body{
 
 #element1 h4{
     color: #1e1d1d;
-    font-size: 20px;
+    font-size: 30px;
     margin-top: 10px;
     margin-bottom: 8px;
     font-family: canopee;
 }
 
-
 #element1 p{
-    font-size: 15px;
+    font-weight: 100;
+    font-size: 18px;
     font-family: editorial;
+    color: #323030;
 }
 
 #element2 h2 {
     letter-spacing: -3px;
     font-family: canopee;
     color: #1e1d1d;
-    font-size: 55px;
+    font-size: 4vw;
     font-weight: 100;
 }
 
 #element2 h3 {
+    text-align: left;
     font-family: editorial;;
-    font-size: 30px;
+    font-size: 2.5vw;
     color: #2f2f2f;
     font-weight: 100;
-    margin: 8px 0;
+    margin: 8px 36px;
 }
 
 #element2 h6 {
+    text-align: left;
     font-family: editorial;
-    font-size: 18px;
+    font-size: 20px;
     color: #1e1d1d;
     font-weight: 100;
-    margin: 20px 0;
+    margin: 20px 36px;
 }
 
 #element2 h6 span{
@@ -411,18 +425,108 @@ html,body{
     display: flex;
     align-items: center;
     justify-content: center;
-   
 }
 
 #bottom-div img{
- 
     width: 90%;
     height: 100%;
     object-fit: cover;
 }
 
-#page5{
-    min-height: 100vh;
+
+#container-right h2{
+    border-left: 2px solid rgb(120, 115, 115);
+    padding-top: 1vw;
+    padding-left: 2vw;
+    letter-spacing: -0.5vw;
+    font-family: canopee;
+    text-align: center;
+    font-weight: 100;
+    font-size: 7.5vw;
+    text-transform: uppercase;
+}
+
+#container-right h2 span{
+    position: relative;
+    font-size: 14vw;
+    font-weight: 100;
+    line-height: 9vw;
+}
+
+#container-right #upper-text p{ 
+    border-left: 2px solid rgb(120, 115, 115);
+    padding-top: 1vw;
+    position: relative;
+    padding-left: 2vw;
+    font-size: 2vw;
+    font-family: editorial;
+    color: #252424;
+
+}
+
+#container-right #lower-text p{
+    border-left: 2px solid rgb(120, 115, 115);
+    padding-top: 2vw;
+    position: relative;
+    padding-left: 2vw;
+    font-size: 2vw;
+    font-family: editorial;
+    color: #252424;
+}
+
+#container-right #Animated-Button {
+    position: relative;
+    margin-top: 3vw;
+    margin-left: 5vw;
+    height: 150px;
+    background-color: #CAC1B6;
+    border: 1px solid #2f2f2fc6;
+    border-radius: 50%;
+    width: 330px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+
+#Animated-Button h1 {
+    padding: 0 50%;
+    font-size: 60px;
+    font-weight: 100;
+    font-family: canopee;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-26%);
+    transition: all ease 0.6s;
+    gap: 10px;
+}
+
+#Animated-Button h1 span{
+    text-align: center;
+}
+
+#Animated-Button img {
+    height: 60px;
+    transition: all ease 0.6s;
+
+    transform: translateX(-120%);
+}
+
+#Animated-Button:hover img {
+    transform: translateX(76%);
+
+}
+
+#Animated-Button:hover h1 {
+    transform: translateX(100%);
+}
+
+/* #page5{
+    height: 100vh;
     width: 100vw;
     background-color: #c4bcb3;
     position: relative;
