@@ -1,14 +1,8 @@
-const scroll = new LocomotiveScroll({
-    el: document.querySelector('#main'),
-    smooth: true
-});
-
-
 var tl = gsap.timeline()
 
 tl.to("#loader",{
     y:"100vh",
-    scale:0.7,
+    scale:0.85,
     duration:0
 })
 tl.to("#loader",{
