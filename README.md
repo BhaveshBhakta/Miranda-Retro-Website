@@ -1,7 +1,7 @@
 ## Miranda - Paper Portfolio Website
 
 This repository contains the source code for Miranda's digital portfolio website, designed to capture the essence of a classic paper portfolio with a modern twist. 
-(Still Under Construction, Stay tune For Updates)
+( Still Under Construction, Stay tune For Updates )
 **Features:**
 
 * **Retro Paper Aesthetic:** The website evokes the nostalgia of a traditional paper portfolio with its clean layout and focus on high-quality visuals.
