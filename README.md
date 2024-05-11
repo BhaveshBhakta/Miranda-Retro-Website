@@ -1,5 +1,4 @@
 ## Miranda - Paper Portfolio Website
-
 This repository contains the source code for Miranda's digital portfolio website, designed to capture the essence of a classic paper portfolio with a modern twist. 
 
 **Features:**
